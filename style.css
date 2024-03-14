@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@600&family=Raleway:ital,wght@0,800;1,800&display=swap');
+
+:root
+{
+    --slider-color: #d90429;
+    --bg-color: #8d99ae;
+    --plan-bg-color: #2b2d42;
+    --text-color: #edf2f4;
+    --button-color: #ef233c;
+
+
+    --title-font: 'Bebas Neue', sans-serif;;
+    --text-font: 'Poppins', sans-serif;;
+    --price-font: 'Raleway', sans-serif;;
+}
+
+body
+{
+    background-color: var(--bg-color);
+}
+
+.container
+{
+    font-family: var(--text-font);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.toggles
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.plans-list
+{
+    margin: 1rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.plan-2
+{
+    border-radius: 6px;
+    color: var(--plan-bg-color);
+    width: 19rem;
+    height: 38rem;
+    padding: 3rem;
+    background-color: var(--button-color);
+}
+
+.plan-1, .plan-3
+{
+    border-radius: 6px;
+    width: 17rem;
+    height: 34rem;
+    padding: 3rem;
+    background-color: var(--plan-bg-color);
+}
+
+.perk-1, .perk-3
+{
+    border-style: solid;
+    border-width: 1px 0px;
+}
+
+.perk
+{
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.plan-2 h2
+{
+    font-size: 3.5rem;
+}
+
+.price-2
+{
+    font-size: 5rem;
+    font-weight: 800;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.8em;
+}
+
+.price-1, .price-3
+{
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-block-start: 0.8em;
+    margin-block-end: 0.8em;
+}
+
+.plan-name
+{
+    font-size: 2rem;
+}
+
+.title
+{
+    font-size: 4.5rem;
+}
+
+.perks
+{
+    padding-bottom: 4rem;
+}
+
+.choose-button
+{
+    border-radius: 6px;
+    background-color: var(--button-color);
+    text-decoration: none;
+    color: var(--plan-bg-color);
+    padding: 1rem 3rem;
+}
+
+.choose-button-pro
+{
+    border-radius: 6px;
+    background-color: var(--plan-bg-color);
+    text-decoration: none;
+    color: var(--button-color);
+    padding: 1rem 3rem;
+}
+
+.title, .plan-name
+{
+    font-family: var(--title-font);
+}
+
+.price
+{
+    font-family: var(--price-font);
+}
+
+.switch {
+    margin: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: var(--slider-color);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--slider-color);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+ 
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
